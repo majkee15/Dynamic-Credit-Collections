@@ -20,4 +20,6 @@ Minimal working example that reproduces figures from the paper.
     oav.save('ref_parameters')
     ...
     
+    
+The autonomous account value can be investigated using the module aav.py.
 
