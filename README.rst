@@ -6,6 +6,7 @@ Quick Start
 Minimal working example that reproduces figures from the paper.
 
 .. code:: python
+
     import dcc
     w_start = 100
     lstart = 1
@@ -13,7 +14,6 @@ Minimal working example that reproduces figures from the paper.
     w_array = np.linspace(0, 100, 40)
     l_array = np.linspace(0, 2, 10)
     oav = OAV(p, w_start, lstart, nx=200, ny=20)
-    oav.solve_v()
     oav.plot_vf(plot_aav_flag=True)
     oav.plot_statespace()
     plt.show()
@@ -25,7 +25,6 @@ The autonomous account value can be investigated using the module aav.py.
 
 .. code:: python
 
-    w_start. 
     import dcc
     w_start = 100
     lstart = 1
@@ -33,6 +32,9 @@ The autonomous account value can be investigated using the module aav.py.
     w_array = np.linspace(0, 100, 40)
     l_array = np.linspace(0, 2, 10)
     oav = OAV(p, w_start, lstart, nx=200, ny=20)
-    oav.solve_v()
+    oav.plot_vf(plot_aav_flag=True)
+    oav.plot_statespace()
+    plt.show()
+    oav.save('ref_parameters')
     ...
 
