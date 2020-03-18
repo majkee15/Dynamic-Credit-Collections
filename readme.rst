@@ -4,6 +4,7 @@ by N. Chehrazi, P. Glynn and T.A. Weber.
 Quick Start
 ===========
 Minimal working example that reproduces figures from the paper.
+
 .. code:: python
     import dcc
     w_start = 100
@@ -17,4 +18,5 @@ Minimal working example that reproduces figures from the paper.
     oav.plot_statespace()
     plt.show()
     oav.save('ref_parameters')
+    ...
 
