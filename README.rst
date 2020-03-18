@@ -25,16 +25,14 @@ The autonomous account value can be investigated using the module aav.py.
 
 .. code:: python
 
-    import yfinance as yf
-
-    msft = yf.Ticker("MSFT")
-
-    msft.history(..., proxy="PROXY_SERVER")
-    msft.get_actions(proxy="PROXY_SERVER")
-    msft.get_dividends(proxy="PROXY_SERVER")
-    msft.get_splits(proxy="PROXY_SERVER")
-    msft.get_balance_sheet(proxy="PROXY_SERVER")
-    msft.get_cashflow(proxy="PROXY_SERVER")
-    msgt.option_chain(..., proxy="PROXY_SERVER")
+    w_start. 
+    import dcc
+    w_start = 100
+    lstart = 1
+    p = Parameters()
+    w_array = np.linspace(0, 100, 40)
+    l_array = np.linspace(0, 2, 10)
+    oav = OAV(p, w_start, lstart, nx=200, ny=20)
+    oav.solve_v()
     ...
 
