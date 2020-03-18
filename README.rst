@@ -23,3 +23,18 @@ Minimal working example that reproduces figures from the paper.
     
 The autonomous account value can be investigated using the module aav.py.
 
+.. code:: python
+
+    import yfinance as yf
+
+    msft = yf.Ticker("MSFT")
+
+    msft.history(..., proxy="PROXY_SERVER")
+    msft.get_actions(proxy="PROXY_SERVER")
+    msft.get_dividends(proxy="PROXY_SERVER")
+    msft.get_splits(proxy="PROXY_SERVER")
+    msft.get_balance_sheet(proxy="PROXY_SERVER")
+    msft.get_cashflow(proxy="PROXY_SERVER")
+    msgt.option_chain(..., proxy="PROXY_SERVER")
+    ...
+
