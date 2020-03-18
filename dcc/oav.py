@@ -1,5 +1,5 @@
-from .aav import AAV
-from .base import Base
+from dcc.aav import AAV, Parameters
+from dcc.base import Base
 import numpy as np
 from scipy.optimize import fsolve, brentq
 from scipy import integrate
@@ -340,7 +340,6 @@ class OAV(Base):
     @classmethod
     def load(cls, f):
         with open(f +'.pickle', 'rb') as pickle_file:
-            #tmp_dict = pickle.load(f)
             return pickle.load(pickle_file)
 
 
@@ -351,7 +350,7 @@ def _main():
     """
     w_start = 100
     lstart = 1
-    p = aav.Parameters()
+    p = Parameters()
     oav = OAV(p, w_start, lstart)
     oav.solve_v()
 
@@ -361,19 +360,19 @@ if __name__ == '__main__':
 
     # w_start = 100
     # lstart = 1
-    # p = aav.Parameters()
+    # p = Parameters()
     # w_array = np.linspace(0, 100, 40)
     # l_array = np.linspace(0, 2, 10)
     # oav = OAV(p, w_start, lstart, nx=200, ny=20)
-    # print(oav.wistar)
-    # print(oav.w0star)
     # oav.solve_v()
     # oav.plot_vf(plot_aav_flag=True)
     # oav.plot_statespace()
     # plt.show()
     # oav.save('ref_parameters')
 
-    filename = 'ref_parameters'
+    # Load pickled file here
+
+    filename = 'dcc/ref_parameters'
     oav = OAV.load(filename)
     oav.plot_statespace()
     oav.plot_vf(plot_aav_flag=True)

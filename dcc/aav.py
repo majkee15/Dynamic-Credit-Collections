@@ -1,7 +1,7 @@
 from scipy import integrate
 from scipy.optimize import fsolve
 import numpy as np
-from base import Base
+from dcc.base import Base
 import matplotlib.pyplot as plt
 
 
