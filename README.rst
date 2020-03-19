@@ -25,8 +25,6 @@ Minimal working example that reproduces figures from the paper.
     oav.save('ref_parameters')
     ...
     
-    
-The autonomous account value can be investigated using the module aav.py.
 
 .. figure:: images/holding_region.png
    :align: center
@@ -36,6 +34,9 @@ The autonomous account value can be investigated using the module aav.py.
 .. figure:: images/vf.png
    :align: center
    :alt: add-item-menu-image.png
+   
+   
+The autonomous account value can be investigated using the module aav.py.
 
 
 
