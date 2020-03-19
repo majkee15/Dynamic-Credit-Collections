@@ -23,18 +23,8 @@ Minimal working example that reproduces figures from the paper.
     
 The autonomous account value can be investigated using the module aav.py.
 
-.. code:: python
+.. figure:: images/holding_region.png
+   :align: center
+   :alt: add-item-menu-image.png
 
-    import dcc
-    w_start = 100
-    lstart = 1
-    p = Parameters()
-    w_array = np.linspace(0, 100, 40)
-    l_array = np.linspace(0, 2, 10)
-    oav = OAV(p, w_start, lstart, nx=200, ny=20)
-    oav.plot_vf(plot_aav_flag=True)
-    oav.plot_statespace()
-    plt.show()
-    oav.save('ref_parameters')
-    ...
 
