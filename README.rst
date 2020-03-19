@@ -26,11 +26,11 @@ The autonomous account value can be investigated using the module aav.py.
 .. figure:: images/holding_region.png
    :align: center
    :alt: add-item-menu-image.png
-   ...
+
    
 .. figure:: images/vf.png
    :align: center
    :alt: add-item-menu-image.png
-   ...
+
 
 
